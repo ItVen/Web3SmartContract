@@ -29,42 +29,6 @@ The SignInSystem is a contract that manages user sign-ins with the following fea
 - Owner-only fund management
 - Event emission for sign-in activities
 
-## Contract Addresses
-
-- AofToken: [To be deployed]
-- SignInSystem: 0x696E0eB647Aa84f6AF662cd92D7A86a0bD0d01bC (opBNB)
-
-## Features
-
-### AofToken Features
-- Standard ERC20 token functionality
-- Permit functionality for gasless approvals
-- Fixed total supply
-- Immutable token name and symbol
-
-### SignInSystem Features
-- Configurable sign-in fee
-- Minimum time gap between sign-ins
-- Sign-in statistics tracking
-- Fund management capabilities
-- Event logging for sign-in activities
-
-## Owner Functions
-
-The SignInSystem contract includes several owner-only functions:
-- `fetchFunds`: Withdraw specific amount of funds
-- `fetchAllFunds`: Withdraw all contract funds
-- `updateRequiredSignGap`: Update the minimum time between sign-ins
-- `updateRequiredSignInFee`: Update the required sign-in fee
-
-## User Functions
-
-### SignInSystem
-- `signIn`: Sign in with a message and fee
-- `getSignerInfo`: Get sign-in statistics for a specific address
-- `getSystemInfo`: Get system-wide statistics
-- `getContractBalance`: Get the contract's current balance
-
 ## Development
 
 ### Prerequisites
